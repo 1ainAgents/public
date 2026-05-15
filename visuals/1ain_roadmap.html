@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1ain — Project Roadmap</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #fafaf9; font-family: system-ui, sans-serif; padding: 40px 32px; color: #2c2c2a; }
+  h1 { font-size: 15px; font-weight: 600; color: #444441; margin-bottom: 32px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .roadmap { display: flex; gap: 0; position: relative; }
+  .roadmap::before { content: ''; position: absolute; top: 32px; left: 32px; right: 32px; height: 2px; background: linear-gradient(to right, #ba7517, #ba7517 25%, #3b6d11 25%, #3b6d11 50%, #185fa5 50%, #185fa5 75%, #b4b2a9 75%); z-index: 0; }
+  .phase { flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1; }
+  .dot { width: 18px; height: 18px; border-radius: 50%; margin-bottom: 16px; flex-shrink: 0; }
+  .card { background: white; border-radius: 10px; padding: 16px 14px; width: 100%; border: 1px solid #d3d1c7; margin: 0 8px; }
+  .phase-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+  .phase-name { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .phase-desc { font-size: 11px; color: #5f5e5a; line-height: 1.5; margin-bottom: 10px; }
+  .feature { font-size: 11px; padding: 3px 0; color: #444441; display: flex; align-items: flex-start; gap: 6px; }
+  .feature::before { content: '·'; color: #b4b2a9; flex-shrink: 0; }
+  .status-badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-top: 10px; }
+  .p1 { color: #633806; background: #faeeda; }
+  .p1b { color: #27500a; background: #eaf3de; }
+  .p2 { color: #0c447c; background: #e6f1fb; }
+  .p3 { color: #5f5e5a; background: #f1efe8; }
+  .dot-p1 { background: #ba7517; }
+  .dot-p1b { background: #3b6d11; }
+  .dot-p2 { background: #185fa5; }
+  .dot-p3 { background: #b4b2a9; border: 2px dashed #888780; background: white; }
+  .card-p1 { border-color: #ba7517; }
+  .card-p1b { border-color: #3b6d11; }
+  .card-p2 { border-color: #185fa5; }
+  .card-p3 { border-color: #d3d1c7; opacity: 0.7; }
+  .divider { width: 1px; background: #d3d1c7; flex-shrink: 0; align-self: stretch; margin-top: 18px; }
+</style>
+</head>
+<body>
+<h1>1ain — Build Roadmap</h1>
+<div class="roadmap">
+
+  <div class="phase">
+    <div class="dot dot-p1"></div>
+    <div class="card card-p1">
+      <div class="phase-label" style="color:#ba7517">Phase 1 — Now</div>
+      <div class="phase-name">1ain Core</div>
+      <div class="phase-desc">Personal master agent. Gatekeeper to all future agents. The foundation everything else builds on.</div>
+      <div class="feature">Telegram interface (primary)</div>
+      <div class="feature">Claude API reasoning engine</div>
+      <div class="feature">Soul template loaded as identity</div>
+      <div class="feature">Persistent session memory</div>
+      <div class="feature">Private Git repo + git-crypt DR</div>
+      <div class="feature">VPS · Docker · UFW Firewall</div>
+      <div class="feature">Single-user, private, sovereign</div>
+      <span class="status-badge p1">▶ In progress</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="phase">
+    <div class="dot dot-p1b"></div>
+    <div class="card card-p1b">
+      <div class="phase-label" style="color:#3b6d11">Phase 1b — Next</div>
+      <div class="phase-name">Tool Integrations</div>
+      <div class="phase-desc">1ain gains access to external services via MCP. Starts acting on your behalf — not just talking.</div>
+      <div class="feature">MCP server activated</div>
+      <div class="feature">Gmail read &amp; draft</div>
+      <div class="feature">Google Calendar access</div>
+      <div class="feature">Google Drive documents</div>
+      <div class="feature">/soulsync auto-updates Git</div>
+      <div class="feature">Encrypted memory at rest</div>
+      <br/>
+      <span class="status-badge p1b">⏳ Trigger: Phase 1 SC-007 passed</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="phase">
+    <div class="dot dot-p2"></div>
+    <div class="card card-p2">
+      <div class="phase-label" style="color:#185fa5">Phase 2 — Hermes</div>
+      <div class="phase-name">Task Ops Agent</div>
+      <div class="phase-desc">First specialist sub-agent. Task and work productivity ops. Separate repo. Routes through 1ain only.</div>
+      <div class="feature">Task and work project management</div>
+      <div class="feature">Blue sky thinking capture</div>
+      <div class="feature">Skills / resource library</div>
+      <div class="feature">Monday.com integration [BQ-005]</div>
+      <div class="feature">Personal ops (Gmail / Calendar / Drive)</div>
+      <div class="feature">Own isolated Git repo</div>
+      <br/>
+      <span class="status-badge p2">⏳ Trigger: 1ain fully trusted</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="phase">
+    <div class="dot dot-p3"></div>
+    <div class="card card-p3">
+      <div class="phase-label" style="color:#888780">Phase 3+ — Vision</div>
+      <div class="phase-name">Multi-Agent OS</div>
+      <div class="phase-desc">1ain as autonomous personal operating system. Specialist agents for every domain. Soul template evolves continuously.</div>
+      <div class="feature">Finance / crypto agent</div>
+      <div class="feature">Research / Web3 agent</div>
+      <div class="feature">Knowledge base (RAG)</div>
+      <div class="feature">Self-improving agent loop</div>
+      <div class="feature">Soul template v2.x+</div>
+      <div class="feature">Potential replication / product</div>
+      <br/>
+      <span class="status-badge p3">◌ Blue sky</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

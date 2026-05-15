@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" style="background:#1a1a17">
+<!--
+  1ain Identity Mark
+  Geometric hexagonal badge — engineering precision aesthetic
+  Amber/gold colourway — trust, authority, primary agent
+-->
+<defs>
+  <style>
+    .outer { fill:#412402; stroke:#EF9F27; }
+    .ring  { fill:none; stroke:#ba7517; }
+    .one   { fill:none; stroke:#FAC775; }
+    .node  { fill:#EF9F27; }
+    .tick  { stroke:#ba7517; fill:none; }
+    .name  { fill:#FAC775; font-family:system-ui,sans-serif; font-weight:600; letter-spacing:0.12em; }
+    .sub   { fill:#ba7517; font-family:system-ui,sans-serif; font-weight:400; letter-spacing:0.22em; }
+    .circuit { stroke:#633806; fill:none; stroke-width:0.8; }
+  </style>
+</defs>
+
+<!-- Outer hexagon (flat-top, R=168) centered at 250,230 -->
+<polygon class="outer" stroke-width="2"
+  points="418,230 334,84 166,84 82,230 166,376 334,376"/>
+
+<!-- Circuit detail lines (subtle inner texture) -->
+<line class="circuit" x1="166" y1="84"  x2="166" y2="376"/>
+<line class="circuit" x1="334" y1="84"  x2="334" y2="376"/>
+<line class="circuit" x1="82"  y1="230" x2="418" y2="230"/>
+<line class="circuit" x1="154" y1="109" x2="96"  y2="210"/>
+<line class="circuit" x1="346" y1="109" x2="404" y2="210"/>
+
+<!-- Middle ring (R=112) -->
+<polygon class="ring" stroke-width="1"
+  points="362,230 306,134 194,134 138,230 194,326 306,326"/>
+
+<!-- Inner ring (R=72) -->
+<polygon class="ring" stroke-width="0.8"
+  points="322,230 286,166 214,166 178,230 214,294 286,294"/>
+
+<!-- Four circuit nodes at inner hex flat edges -->
+<circle class="node" cx="322" cy="230" r="5"/>
+<circle class="node" cx="178" cy="230" r="5"/>
+<circle class="node" cx="250" cy="166" r="5"/>
+<circle class="node" cx="250" cy="294" r="5"/>
+
+<!-- Connecting lines from nodes to "1" base -->
+<line class="ring" stroke-width="0.6" x1="316" y1="230" x2="268" y2="230" stroke-dasharray="3 3"/>
+<line class="ring" stroke-width="0.6" x1="184" y1="230" x2="232" y2="230" stroke-dasharray="3 3"/>
+<line class="ring" stroke-width="0.6" x1="250" y1="171" x2="250" y2="188" stroke-dasharray="3 3"/>
+<line class="ring" stroke-width="0.6" x1="250" y1="289" x2="250" y2="296" stroke-dasharray="3 3"/>
+
+<!-- Outer hex vertex tick marks -->
+<line class="tick" stroke-width="1.5" x1="418" y1="230" x2="432" y2="230"/>
+<line class="tick" stroke-width="1.5" x1="334" y1="84"  x2="340" y2="74"/>
+<line class="tick" stroke-width="1.5" x1="166" y1="84"  x2="160" y2="74"/>
+<line class="tick" stroke-width="1.5" x1="82"  y1="230" x2="68"  y2="230"/>
+<line class="tick" stroke-width="1.5" x1="166" y1="376" x2="160" y2="387"/>
+<line class="tick" stroke-width="1.5" x1="334" y1="376" x2="340" y2="387"/>
+
+<!-- The "1" numeral — precision serif engineering style -->
+<!-- Main vertical stem -->
+<line class="one" stroke-width="9" stroke-linecap="round" x1="250" y1="185" x2="250" y2="296"/>
+<!-- Top-left serif stroke -->
+<line class="one" stroke-width="6" stroke-linecap="round" x1="224" y1="203" x2="250" y2="185"/>
+<!-- Bottom crossbar -->
+<line class="one" stroke-width="6" stroke-linecap="round" x1="222" y1="296" x2="278" y2="296"/>
+
+<!-- Identity text -->
+<text class="name" x="250" y="400" text-anchor="middle" font-size="36">1ain</text>
+<text class="sub"  x="250" y="428" text-anchor="middle" font-size="12">PERSONAL AGENT</text>
+
+<!-- Small version mark -->
+<text style="fill:#412402;font-family:system-ui;font-size:10px" x="418" y="376" text-anchor="end">v1.0</text>
+</svg>
